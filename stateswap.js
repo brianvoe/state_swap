@@ -84,7 +84,6 @@
             info.data.state_select.html(options);
 
             if(info.options.state_val){
-                console.log(info.options.state_val);
                 info.data.state_select.val(info.options.state_val);
             }
 
