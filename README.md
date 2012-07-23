@@ -1,4 +1,4 @@
-state_swap
+State Swap
 ==========
 
-Upon changing country state will change as well.
+Upon changing country, state will be swapped out with new values.
