@@ -65,10 +65,10 @@
             var info = this;
 
             /* Set state options */
-            if(info.data.country_value == 'us' || info.data.country_value == 'united states'){
+            if(info.data.country_value.toLowerCase() == 'us' || info.data.country_value.toLowerCase() == 'united states'){
                 /* United States */
                 info._set_united_states();
-            } else if(info.data.country_value == 'ca' || info.data.country_value == 'canada'){
+            } else if(info.data.country_value.toLowerCase() == 'ca' || info.data.country_value.toLowerCase() == 'canada'){
                 /* Canada */
                 info._set_canada();
             }
