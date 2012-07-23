@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>jQuery State Dropdown Plugin</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="stateswap.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('#country').stateswap({
+				state_id: 'state',
+				state_val: 'CA',
+				on_create: function(){
+					console.log('on create init');
+				},
+				on_update: function(){
+					console.log('on update init');
+				}
+			});
+		});
+		</script>
+		<style>
+			select {
+			    padding: 6px;
+			    background-color: #fff;
+			    border: 1px solid #d5d5d5;
+			    color: #333;
+			    border-radius: 4px;
+			    -moz-border-radius: 4px;
+			    -webkit-border-radius: 4px;
+			    box-shadow: inset 2px 2px 2px #eeeeee;
+			    -moz-box-shadow: inset 2px 2px 2px #eeeeee;
+			    -webkit-box-shadow: inset 2px 2px 2px #eeeeee;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>State Swap</h1>
+		<h2>Connects country dropdown with state dropdown and upon country change, state dropdown will update with new states.</h2>
+		<select id="state" name="state"></select>
+		<br />
+		<select id="country" name="country">
+			<option value="us">United States</option>
+			<option value="ca">Canada</option>
+		</select>
+	</body>
+</html>
